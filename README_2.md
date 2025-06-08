@@ -82,7 +82,7 @@ python -m molbart.predict --config-path=experiment_1 --config-name=predict.yaml
 
 ### Purpose:
 
-Create a smaller subset from a large `.pickle` dataset (e.g., `uspto_50.pickle`), the data and models checkpoints are provided unted `Chemformer-selected` folder.
+Create a smaller subset from a large `.pickle` dataset (e.g., `uspto_50.pickle`), you can find the dataset and model chackpoints in this link https://az.app.box.com/s/7eci3nd9vy0xplqniitpk02rbg9q2zcq.
 
 ### Example:
 
