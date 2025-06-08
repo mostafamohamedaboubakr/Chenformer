@@ -1,4 +1,4 @@
-# Updated Chemformer Repository - Usage Instructions
+# Updated Chemformer Repository
 
 This is a README file for the Chemfromer repo (updated with all new versions of packages and dependencies till june 2025), it contains a quick guid to test the the fine-tuning and prediction tasks. It includes a guide for Chemformer users working in resource-limited or single-GPU environments.
 
