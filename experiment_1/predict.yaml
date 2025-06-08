@@ -1,0 +1,33 @@
+# @package _global_
+
+defaults:
+  # override config either in this file or using experiment config
+  - _self_
+  - experiment: null # experiment configs allow for version control of specific hyperparameters
+
+
+# Setting
+batch_size: 64
+n_beams: 10
+n_unique_beams: null
+n_gpus: 1
+
+# Data
+data_path: /mnt/c/Users/lenovo/Chemformer-main-MolecularAI/Chemformer-main-MolecularAI/Chemformer-selected/data/seq-to-seq_datasets/uspto_50_1000.pickle
+output_sampled_smiles: /mnt/c/Users/lenovo/Chemformer-main-MolecularAI/Chemformer-main-MolecularAI/experiment_1/fine_tune_out/predicted_products22.csv 
+vocabulary_path: bart_vocab_downstream.json
+task: forward_prediction    # ["forward_prediction", "backward_prediction", "mol_opt"]
+i_chunk: 0
+n_chunks: 1
+data_device: cuda
+
+# Model
+model_path: /mnt/c/Users/lenovo/Chemformer-main-MolecularAI/Chemformer-main-MolecularAI/Chemformer-selected/models/fined-tuned/uspto_50/last.ckpt
+model_type: bart            # ["bart", "unified"]
+dataset_part: full      # ["full", "train", "val", "test"]
+train_mode: eval
+
+datamodule:
+  - Uspto50DataModule
+  #- SynthesisDataModule
+  
